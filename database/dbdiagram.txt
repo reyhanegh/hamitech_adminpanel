@@ -1,0 +1,29 @@
+// https://dbdiagram.io/
+
+Table tbl_admin{
+  id int [pk, increment] // auto-increment
+  first_name varchar(50)
+  last_name varchar(50)
+  phone varchar(20)
+  username varchar(100) [unique]
+  password varchar(100)
+  last_ip text
+  created_at bigint
+  access boolean
+  status boolean
+}
+
+
+Table tbl_user{
+  id int [pk, increment] // auto-increment
+  first_name varchar(50)
+  last_name varchar(50)
+  national_code varchar(10)
+  phone varchar(20)
+  username varchar(50) [unique]
+  password varchar(50)
+  birthday bigint
+  created_at bigint
+  updated_at bigint
+  status boolean
+}
